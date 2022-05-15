@@ -1,3 +1,4 @@
 # Clustering-Methods
-BS 806 - Multivariate Analysis for Biostatisticians 
+SPH BS 806 - Multivariate Analysis for Biostatisticians 
+
 Class 10
