@@ -7,7 +7,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(BiocManager)
 library(Heatplus)
 set.seed(1234)
 ```
@@ -15,7 +14,6 @@ set.seed(1234)
 ### Simulating Sample
 ```{r}
 #Sample of 300 observations with 4 variables from 3 clusters
-set.seed(1)
 cluster1_x1 <- rnorm(n=100, mean=0, sd=1)
 cluster1_x2 <- rnorm(n=100, mean=2.5, sd=1)
 cluster1_x3 <- rnorm(n=100, mean=-2.5, sd=1)
@@ -198,8 +196,4 @@ table(kmeans_2$cluster, clustering_labels_2)
 clustering_labels_3 <- cutree(hierarchical_cluster, k=3)
 table(kmeans_3$cluster, clustering_labels_3)
 ```
-
-
-
-
 
